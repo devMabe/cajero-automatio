@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autores" content="Mateo Beltran, Jesus Mejia, Diego García" />
+	
+    <title>Simulador Cajero Automático</title>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cabecera">
+      <h1>Banco Afonca.S.A</h1>
+      <div class="titular">
+        <h2>Simulador web de Cajero</h2>
+      </div>
+      <div class="img">
+        <img src="img/003-profit.png" />
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <h2 class="contenedor-opciones">OPCIONES DEL CAJERO</h2>
+
+      <div class="contenedor_name">
+        <h2 class="contenedor_name-h2">INGRESO DE VALORES</h2>
+
+        <div class="nombres">
+          <h3>Monto a Depositar</h3>
+          <br />
+          <h3>Monto a retirar</h3>
+        </div>
+
+        <div class="campos">
+          <input type="number" id="montoDepositar" min="0" /> <br />
+          <input type="number" id="montoRetirar" min="0" />
+        </div>
+        <span class="saldo" id="saldoactual">Saldo actual:$0.00</span> <br />
+      </div>
+
+      <div class="cajaOpciones">
+        <div class="opcion1">
+          <h2>Balance</h2>
+
+          <form class="balance">
+            <img class="balan" src="img/consulta.png" alt="" />
+            <input
+              type="button"
+              value="Consultar"
+              id="consultar"
+              onclick="consultaSaldo()"
+            />
+          </form>
+        </div>
+        <div class="opcion2">
+          <h2>Deposito</h2>
+
+          <form class="deposito">
+            <img class="depo" src="img/depositar.png" alt="" />
+            <input
+              type="button"
+              value="Depositar"
+              id="depositar"
+              onclick="depositarSaldo()"
+            />
+          </form>
+        </div>
+        <div class="opcion3">
+          <h2>Retiro</h2>
+          <form class="retiro">
+            <img class="reti" src="img/retirada.png" alt="" />
+            <input
+              type="button"
+              value="Retirar"
+              id="retirar"
+              onclick="retirarSaldo()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/sweeAlert.js"></script>
+  </body>
+</html>
