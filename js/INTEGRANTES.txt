@@ -1,0 +1,7 @@
+1: MATEO BELTRAN 
+2: DIEGO GARCÍA
+3: JESUS MEJÍA
+
+Intruccion login banco
+
+/*Para el uso del logeo  la clave debe ser menor  o igual a 4*/

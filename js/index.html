@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="autores" content="Mateo Beltran, Jesus Mejia, Diego García" />
+	<title>Banco Afonca S.A</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/validacion.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<div class="cabecera2">
+      <h1>Banco Afonca.S.A</h1>
+      <div class="titular">
+        <h2>Ingreso de usuario y clave</h2>
+      </div>
+      <div class="img">
+        <img src="img/003-profit.png" />
+      </div>
+    </div>
+
+	<div class="contenedor2">
+		<div class="contenedor_name2">
+           <h2 class="contenedor_name2-h2">DIGITE SU USUARIO Y CLAVE</h2>
+
+       		 <div class="nombres">
+          		<h3>Usuario(c.c)</h3>
+          		<br />
+          		<h3>Clave</h3>
+       		 </div>
+
+       		 <div class="campos">
+          		<input type="number" id="user" min="0"/> <br />
+          		<input type="password" id="pass" min="0" />
+        	</div>
+
+        	<div class="ingresar">
+        		<input type="button" id="ingresar" value="Continuar" onclick="ingesar()">
+        	</div>
+
+      </div>
+	</div>
+	<footer>
+		<p>Todos los derechos reservados &copy;2021</p>
+	</footer>
+</body>
+</html>
