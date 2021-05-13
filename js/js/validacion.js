@@ -1,4 +1,3 @@
-var succes = 0;
 
 function ingesar() {
 	var usuario = document.getElementById('user').value;
