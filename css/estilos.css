@@ -27,6 +27,23 @@ body{
 	margin-right: 5%;
 
 }
+
+.cabecera2{
+	width: 100%;
+	display: inline-block;
+	background:#5B2C6F ;
+	margin-bottom: -10px;
+
+}
+
+.cabecera2 h1{
+	text-align: right;
+	font-size: 2.5em;
+	color: #fff;
+	margin-top:  10px;
+	margin-right: 5%;
+
+}
 .purple{
 	color: #5B2C6F;
 	font-size: 1.5em;
@@ -66,30 +83,50 @@ body{
 	box-sizing: border-box;
 }
 
-footer{
-	background: #5B2C6F;
-	height:160px;
-	margin-top: 200px;
-}
 
-footer p{
-	
-	padding-top: 50px;
-	text-align: center;
-	font-size: 2em;
-	color: #fff;
-}
 
+
+#titulo{
+	margin-left: 25%;
+}
 .contenedor{
-	height: 340px;
+	height: auto;
 	box-sizing: border-box;
 	width: 90%;
 	margin: auto;
-
 	background-color: #fff;
 	box-shadow: 2px 2px  14px #000;
 }
+.contenedor2{
+	height: 350px;
+	box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 2px 2px  14px #000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px
+}
 
+.ingresar{
+	
+	width: 220px;
+	height: 85px;
+	margin-bottom: 10px;
+	margin-left: 45%;
+}
+
+.ingresar input{
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+h2[class="contenedor_name2-h2"]{
+	font-size: 1.5em;
+	padding-left: 25%;
+	color: #5B2C6F;
+
+}
 
 /*saldos datos y nombres*/
 h3{
@@ -102,16 +139,60 @@ span{
 }
 
 .contenedor_name{
-	height: 253px;
+	height: 250px; important!
 	box-sizing: border-box;
 	width: 50%;
+	padding-left: 10px;
 	margin-left: 8%;
 	border-radius: 10px;
 	background-color:#F8F9F9 ;
 	box-shadow: 1px 1px  10px  #808B96;
-	margin-top:-20px;
+	margin-top:10px;
+	
 }
 
+.contenedor_name2{
+	height: auto;
+	box-sizing: border-box;
+	width: 50%;
+	padding-left: 10px;
+	margin: auto;
+	border-radius: 10px;
+	background-color:#F8F9F9 ;
+	box-shadow: 1px 1px  10px  #808B96;
+	margin-top:10px;
+	
+}
+
+
+.contenedor_name2 .nombres{
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 30%;
+	padding-left: 10px;
+	height: 90px
+}
+
+.contenedor_name2 .campos{
+	display: inline-block;
+	
+	margin-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 90px;
+
+}
+
+
+
+
+.contenedor_name2 .campos input{
+	border: 1px solid #5B2C6F;
+}
+
+.contenedor_name2 .nombres h3{
+	color: #5B2C6F;
+}
 
 .contenedor_name .nombres{
 	display: inline-block;
@@ -124,6 +205,7 @@ span{
 
 .contenedor_name-h2{
 	margin-top: 10px;
+
 }
 
 .contenedor_name .campos{
@@ -144,6 +226,7 @@ span{
 }
 
 .saldo{
+	margin-top: 20px;
 	margin-left: 30%;
 	font-size: 1.2em;
 	color:  #5B2C6F
@@ -154,8 +237,7 @@ span{
 .contenedor-opciones{
 	color: #5B2C6F;
 	display: inline-block;
-	margin-left: 60%;
-	margin-bottom: -20px;
+	margin-left: 60.5%;
 	
 	
 
@@ -174,7 +256,11 @@ span{
 	text-align: center;
 }
 .cajaOpciones{
-	margin-top: -230px;
+	margin-top: -260px;
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 24%;
+	height: 260px;
 	margin-left: 60%;
 
 }
@@ -221,10 +307,6 @@ span{
 
 
 
-
-
-
-
 input[type='button']{
 	text-align: center;
 	width: 40%;
@@ -232,6 +314,7 @@ input[type='button']{
 	margin-right: 10%;
 	background-color: #5B2C6F;
 	color: #fff;
+	margin-bottom: 10px;
 	font-size: 1.1em;
 	border: 1px solid #5B2C6F;
 	border-radius: 60px;
@@ -259,6 +342,61 @@ input[type='button']:hover{
 }
 
 
+.cerrar{
+	margin-left: 100px;
+	width: 200px;
 
+}
+
+
+.imprimir{
+	width: 22%;
+	margin-left: 8%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.imprimir span{
+	display: inline-block;
+
+}
+
+.Dinero{
+	width: 220px;
+	
+	margin-left: 43%;
+	padding: 10px;
+	margin-top: -150px;
+}
+.Dinero h2{
+	margin-top: -20px
+}
+.Dinero img{
+	border: 3px solid gray;
+
+}
+#dinero{
+	font-size: 20px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #5B2C6F;
+	color: #fff;
+}
+
+footer{
+	background: #5B2C6F;
+	height:150px;
+	margin-top: 200px;
+}
+
+footer p{
+	
+	padding-top: 50px;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+}
 
 

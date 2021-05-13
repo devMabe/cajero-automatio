@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autores" content="Mateo Beltran, Jesus Mejia, Diego García" />
+	  <title>Simulador Cajero Automático</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/opciones.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="cabecera">
+      <h1>Banco Afonca.S.A</h1>
+      <div class="titular">
+        <h2>Simulador de Cajero web</h2>
+      </div>
+      <div class="img">
+        <img src="img/003-profit.png" />
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <h2 class="contenedor-opciones">OPCIONES DEL CAJERO</h2>
+
+      <div class="contenedor_name">
+        <h2 class="contenedor_name-h2">INGRESO DE VALORES</h2>
+
+        <div class="nombres">
+          <h3>Monto a Depositar</h3>
+          <br />
+          <h3>Monto a retirar</h3>
+        </div>
+
+        <div class="campos">
+          <input type="number" id="montoDepositar" min="0" /> <br />
+          <input type="number" id="montoRetirar" min="0" />
+        </div>
+        <span class="saldo" id="saldoactual">Saldo actual:$0.00</span> <br />
+      </div>
+
+      <div class="cajaOpciones">
+        <div class="opcion1">
+          <h2>Balance</h2>
+          <form class="balance">
+            <img class="balan" src="img/consulta.png" alt="" />
+            <input
+              type="button"
+              value="Consultar"
+              id="consultar"
+              onclick="consultaSaldo()"
+            />
+          </form>
+        </div>
+        <div class="opcion2">
+          <h2>Deposito</h2>
+          <form class="deposito">
+            <img class="depo" src="img/depositar.png" alt="" />
+            <input
+              type="button"
+              value="Depositar"
+              id="depositar"
+              onclick="depositarSaldo()"
+            />
+          </form>
+        </div>
+        <div class="opcion3">
+          <h2>Retiro</h2>
+          <form class="retiro">
+            <img class="reti" src="img/retirada.png" alt="" />
+            <input
+              type="button"
+              value="Retirar"
+              id="retirar"
+              onclick="retirarSaldo()"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="cerrar">
+        <input type="button" value="Cerrar" onclick="direccionar()">
+      </div>
+      <div class="imprimir">
+        <span class="punto">********************************</span><br>
+        <span class="title" id="titulo">BANCO AFONCA S.A</span> <br />
+        <span class="fecha" id="fechaactual">Fecha:</span> <br />
+        <span class="fecha" id="hora">Hora:  </span> <br />
+        <span class="fecha" id="tipo">Tipo:</span> <br />
+        <span class="saldo1" id="saldoactual1">Saldo:$0.00</span> <br />
+        <span class="punto">********************************</span>
+
+      </div>
+      <div class="Dinero">
+        <h2 id="dinero">Dinero a retirar</h2>
+        <div class="imgbillete">
+          <img src="img/b1.jpg"> 
+           
+        </div>
+        
+      </div>
+      
+    </div>
+        
+	<footer>
+		<p>Todos los derechos reservados &copy;2021</p>
+	</footer>
+
+  </body>
+</html>
